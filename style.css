@@ -1,5 +1,9 @@
+main{
+  margin-top: 5rem;
+  padding: 1rem;
+}
+
 .navbar{
-  
   position: fixed;
   background-color: var(--bg-primary);
   transition: height 200ms ease;

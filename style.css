@@ -1,15 +1,32 @@
-main{
+:root {
+  font-size: 16px;
+  font-family: "Open Sans";
+  --text-primary: #b6b6b6;
+  --text-secondary: #ececec;
+  --bg-primary: #23232e;
+  --bg-secondary: #141418;
+}
+
+/* body {
+  color: #141418;
+  background-color: #ececec;
+  margin: 0;
+  padding: 0;
+} */
+
+main {
   margin-top: 5rem;
   padding: 1rem;
 }
 
-.navbar{
+.navbar {
   position: fixed;
+  display: block;
   background-color: var(--bg-primary);
   transition: height 200ms ease;
 }
 
-.navbar-nav{
+.navbar-nav {
   font-size: 1rem;
   list-style: none;
   padding: 1.5rem;
@@ -18,15 +35,13 @@ main{
   align-items: center;
   width: 100%;
   justify-content: space-evenly;
-
 }
 
-.nav_item{
-  height:100%;
+.nav_item {
+  height: 100%;
 }
 
-
-.nav-link{
+.nav-link {
   display: flex;
   align-items: center;
   width: 5rem;
@@ -36,27 +51,26 @@ main{
   transition: var(--transition-speed);
 }
 
-.nav-link:hover{
+.nav-link:hover {
   filter: grayscale(0%) opacity(1);
-  background : var(--bg-secondary);
+  background: var(--bg-secondary);
   color: var(--text-secondary);
   height: 2rem;
 }
 
-.link-text{
+.link-text {
   margin-top: 1rem;
 }
 
-.navbar:hover{
-  
-}
+/* .navbar:hover {
+} */
 
-.navbar:hover .link-text{
+.navbar:hover .link-text {
   display: block;
 }
 
-@media only screen and (max-width: 600px){
-  .navbar{
+@media only screen and (max-width: 600px) {
+  .navbar {
     right: 0;
     height: 25vh;
     width: 5rem;
@@ -77,23 +91,23 @@ main{
 }
 
 @media only screen and (min-width: 600px) {
-  .navbar{
+  .navbar {
     top: 0;
     height: 5rem;
     width: 100vw;
   }
 
-  .navbar:hover .link-text{
-  display: inline;
-  transition: opacity var(--transition-speed);
+  .navbar:hover .link-text {
+    display: inline;
+    transition: opacity var(--transition-speed);
+  }
 }
-}
-*
-{
+
+*{
   margin: 0;
   padding: 0;
- font-family: consolas;
- background-color: #000
+  font-family: consolas;
+  background-color: #000;
 }
 
 @media screen and (min-width: 600px) {
@@ -110,89 +124,73 @@ main{
   padding: 0 10px;
 }
 
-section
-{
+section {
   padding: 50px;
   background: #000;
-
 }
 
-section h2
-{
+section h2 {
   font-size: 2.5em;
   color: #fff;
-
 }
 
-section p
-{
-    font-size: 1.2em;
-    color: #fff;
-
+section p {
+  font-size: 1.2em;
+  color: #fff;
 }
 
-::-webkit-scrollbar
-{
+::-webkit-scrollbar {
   width: 0;
 }
 
-#scrollpath
-{
+#scrollpath {
   position: fixed;
   top: 0;
-  right:0;
+  right: 0;
   width: 10px;
   height: 100%;
-  background: rgba(255, 255, 255,0.05);
+  background: rgba(255, 255, 255, 0.05);
 }
 
-#progressbar 
-{
-
+#progressbar {
   position: fixed;
   top: 0;
-  right:0;
+  right: 0;
   width: 10px;
   height: 100%;
-  background: linear-gradient(to top,#008aff,#00ffe7);
+  background: linear-gradient(to top, #008aff, #00ffe7);
   animation: animate 5s linear infinite;
 }
 
-@keyframes animate
-{
-  0%
-  {
+@keyframes animate {
+  0% {
     filter: hue-rotate(0deg);
   }
-  50%
-  {
+  50% {
     filter: hue-rotate(360deg);
   }
 }
 
-
-#progressbar:before
-{
-  content: '';
+#progressbar:before {
+  content: "";
   position: absolute;
   top: 0;
-  right:0;
+  right: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to top,#008aff,#00ffe7);
-  filter: blur(10px)
+  background: linear-gradient(to top, #008aff, #00ffe7);
+  filter: blur(10px);
 }
 
-#progressbar:after
-{
-  content: '';
+#progressbar:after {
+  content: "";
   position: absolute;
   top: 0;
-  right:0;
+  right: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to top,#008aff,#00ffe7);
-  filter: blur(10px)
+  background: linear-gradient(to top, #008aff, #00ffe7);
+  filter: blur(10px);
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
@@ -202,13 +200,13 @@ body {
   display: -ms-flexbox;
   display: flex;
   min-height: 100vh;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .wrapper {
@@ -216,7 +214,7 @@ body {
   max-height: 800px;
   background: #000;
   -webkit-box-shadow: 0px 25px 500px -42px #fff;
-          box-shadow: 0px 25px 500px -42px #fff;
+  box-shadow: 0px 25px 500px -42px #fff;
   padding: 25px;
   border-radius: 25px;
   overflow: hidden;
@@ -232,15 +230,15 @@ body {
 .wrapper .image_box img {
   max-width: 800px;
   max-height: 800px;
-  -webkit-transform: ;
-          transform: ;
+  /* -webkit-transform: ;
+  transform: ; */
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
 .wrapper .image_box:before {
   content: "";
-  background-image: url('https://photos.app.goo.gl/iCsghp9jZzWPubkK8');
+  background-image: url("https://photos.app.goo.gl/iCsghp9jZzWPubkK8");
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   width: 100%;
@@ -256,7 +254,7 @@ body {
   text-align: center;
   font-size: 32px;
   -webkit-transform: translateY(130%);
-          transform: translateY(130%);
+  transform: translateY(130%);
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
@@ -270,7 +268,7 @@ body {
   font-weight: 900;
   left: 0;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   opacity: 0.1;
   z-index: 0;
   text-align: center;
@@ -309,11 +307,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .wrapper .colorAttr .colorLabel {
@@ -375,14 +373,14 @@ body {
 
 .wrapper .hoverWrapper {
   -webkit-transform: translateY(130%);
-          transform: translateY(130%);
+  transform: translateY(130%);
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
 .wrapper:hover img {
   -webkit-transform: rotate(0deg);
-          transform: rotate(0deg);
+  transform: rotate(0deg);
 }
 
 .wrapper:hover .image_box:before {
@@ -391,19 +389,16 @@ body {
 
 .wrapper:hover .hoverWrapper {
   -webkit-transform: translateY(0);
-          transform: translateY(0);
+  transform: translateY(0);
 }
 
 .wrapper:hover .pTitle {
   -webkit-transform: translateY(0);
-          transform: translateY(0);
+  transform: translateY(0);
 }
 
-
-  .column {
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
-  }
-
-
+.column {
+  width: 100%;
+  display: block;
+  margin-bottom: 20px;
+}

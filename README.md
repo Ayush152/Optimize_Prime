@@ -18,4 +18,11 @@ We,ve used smooth scroll feature.
 We,ve applied rbg scrollbar in our Website.
    
    
-   
+Links for the complete website :
+
+Netlify : https://optimizeprime.netlify.app/ 
+
+Github Pages : https://ayush152.github.io/Optimize_Prime/  
+
+
+

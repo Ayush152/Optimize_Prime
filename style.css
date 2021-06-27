@@ -890,3 +890,24 @@ h1
   justify-content: center;
   text-align: center;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.response{
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  color: dodgerblue;
+  background-color: paleturquoise;
+  align-items: center;
+}
+
+#sent  
+{
+  font-size: 80px;
+
+} 
+
+#nap 
+{
+  font-size: 40px;
+}    

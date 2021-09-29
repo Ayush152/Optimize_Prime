@@ -1,7 +1,7 @@
 #Optimize_Prime
 WebOcode
 
-Our Site is Built using HTML, CSS and Javascript. We used various sites for images and some of them are Alphacoders, Wallpaper_cave and Unsplash.
+Our Site is Built using HTML, CSS and Javascript. We used various databases for images and some of them are Alphacoders, Wallpaper_cave and Unsplash.
 
 Alphacoders: https://wall.alphacoders.com/
 
